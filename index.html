@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .row .cell {
+        display: inline-block;
+
+        border: gray 1px solid;
+
+        width: 20px;
+        height: 20px;
+
+        vertical-align: middle;
+        text-align: center;
+
+        cursor: pointer;
+      }
+
+      .row .cell.hidden {
+        background-color: #e6e6e6;
+      }
+
+      .row .cell.revealed {
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sweeper-container">
+    </div>
+    <script src="sweeper.js" language="javascript"></script>
+    <script>
+      var sweeper = new Sweeper('sweeper-container');
+      sweeper.display();
+    </script>
+  </body>
+</html>
